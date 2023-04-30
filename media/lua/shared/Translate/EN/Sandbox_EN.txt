@@ -1,0 +1,32 @@
+
+
+Sandbox_EN = {
+    Sandbox_MedicalCocktail_Main = "Medical Cocktail",
+
+    Sandbox_MedicalCocktail_HealMode = "Healing Mode",
+    Sandbox_MedicalCocktail_HealMode_option1 = "Zeus Heal",
+    Sandbox_MedicalCocktail_HealMode_option1_tooltip = "This essentially provides a God mode heal to the entire body; resetting nutrition, & more. Not recommended.",
+    Sandbox_MedicalCocktail_HealMode_option2 = "Standard Heal",
+    Sandbox_MedicalCocktail_HealMode_option2_tooltip = "Heal all wounds, remove glass and bullets, and clears infections, but does not remove bandages, splints, etc, as Zeus heal does.",
+    Sandbox_MedicalCocktail_HealMode_option3 = "Cure All Infections",
+    Sandbox_MedicalCocktail_HealMode_option3_tooltip = "Cures wound infections, colds, food poisoning and zombification.",
+    Sandbox_MedicalCocktail_HealMode_option4 = "Cure Zombification"
+
+    Sandbox_MedicalCocktail_HealInstant = "Instant Healing",
+    Sandbox_MedicalCocktail_HealInstant = "Whether internal infections should be instantly healed, or only if the source should be cleared. This does not apply to wound infections, which must be cleared instantly.",
+
+    Sandbox_MedicalCocktail_SideEffects_Standard = "Side Effects: Standard",
+    Sandbox_MedicalCocktail_SideEffects_Standard_tooltip = "Whether 'standard' side effects (hunger, panic) should be enabled.",
+
+    Sandbox_MedicalCocktail_SideEffects_Intoxicated = "Side Effects: Intoxication",
+    Sandbox_MedicalCocktail_SideEffects_Intoxicated_tooltip = "Whether intoxication interactions should be enabled.",
+
+    Sandbox_MedicalCocktail_SideEffects_Nutrition = "Side Effects: Nutrition",
+    Sandbox_MedicalCocktail_SideEffects_Nutrition_tooltip = "Whether nutrition interaction should be enabled.",
+
+    Sandbox_MedicalCocktail_SideEffects_Trait = "Side Effects: Trait",
+    Sandbox_MedicalCocktail_SideEffects_Trait_tooltip = "Whether additional trait support should be enabled.",
+
+    Sandbox_MedicalCocktail_SideEffects_Death = "Side Effects: Death",
+    Sandbox_MedicalCocktail_SideEffects_Death_tooltip = "Whether side effects should be allowed to immediately kill the player",
+}

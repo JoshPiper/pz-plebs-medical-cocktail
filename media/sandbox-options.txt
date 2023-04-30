@@ -1,0 +1,51 @@
+VERSION = 1,
+
+option MedicalCocktail.HealMode {
+    type = enum,
+    numValues = 4,
+    default = 3,
+    page = MedicalCocktail_Main,
+    translation = MedicalCocktail_HealMode,
+}
+
+option MedicalCocktail.HealInstant {
+    type = boolean,
+    default = false,
+    page = MedicalCocktail_Main,
+    translation = MedicalCocktail_HealInstant,
+}
+
+option MedicalCocktail.SideEffects.Standard {
+    type = boolean,
+    default = true,
+    page = MedicalCocktail_Main,
+    translation = MedicalCocktail_SideEffects_Standard,
+}
+
+option MedicalCocktail.SideEffects.Intoxicated {
+    type = boolean,
+    default = true,
+    page = MedicalCocktail_Main,
+    translation = MedicalCocktail_SideEffects_Intoxicated,
+}
+
+option MedicalCocktail.SideEffects.Nutrition {
+    type = boolean,
+    default = true,
+    page = MedicalCocktail_Main,
+    translation = MedicalCocktail_SideEffects_Nutrition,
+}
+
+option MedicalCocktail.SideEffects.Trait {
+    type = boolean,
+    default = true,
+    page = MedicalCocktail_Main,
+    translation = MedicalCocktail_SideEffects_Trait,
+}
+
+option MedicalCocktail.SideEffects.Death {
+    type = boolean,
+    default = false,
+    page = MedicalCocktail_Main,
+    translation = MedicalCocktail_SideEffects_Death,
+}
