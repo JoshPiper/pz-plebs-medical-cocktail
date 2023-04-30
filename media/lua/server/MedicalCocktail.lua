@@ -165,7 +165,7 @@ function MedicalCocktail.Heal(ply)
 	end
 end
 
-function MedicalCocktail.SideEffects.Plain(ply, stats, canPanic, canStarve)
+function MedicalCocktail.SideEffects.Plain(stats, canPanic, canStarve)
 	stats:setEndurance(stats:getEndurance() / 2)
 	stats:setDrunkenness(100)
 
@@ -218,8 +218,8 @@ function MedicalCocktail.OnEat.Cocktail(_, ply, pct)
 	local stats, nut = ply:getStats(), ply:getNutrition()
 
 	if not allowTox and not allowNut then
-		MedicalCocktail.SideEffects.Plain(ply, stats, canPanic, canStarve)
+		MedicalCocktail.SideEffects.Plain(stats, canPanic, canStarve)
 	else
-		MedicalCocktail.SideEffects.Plain(ply, stats, canPanic, canStarve)
+		MedicalCocktail.SideEffects.Plain(stats, canPanic, canStarve)
 	end
 end
