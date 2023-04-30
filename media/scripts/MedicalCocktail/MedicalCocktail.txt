@@ -1,0 +1,78 @@
+module MedicalCocktail {
+	imports {
+		Base
+	}
+
+	item Cocktail {
+		Type = Food,
+		Weight = 0.5,
+		DisplayName = Medical Cocktail,
+		Icon = MedicalCocktail.Cocktail,
+		DisplayCategory = FirstAid,
+		Medical = true,
+		CustomContextMenu = Take,
+		CantBeFrozen = true,
+		IsCookable = false,
+		OnEat = MedicalCocktail.OnEat.Cocktail,
+		CustomEatSound = DrinkingFromBottlePlastic,
+		EatType = Mug
+	}
+
+	item Amprenavir {
+		Type = Normal,
+		Weight = 0.02,
+		DisplayName = Amprenavir,
+		Icon = MedicalCocktail.Amprenavir,
+		Tags = MedicalCocktail.Raw;MedicalCocktail.Alpha,
+		DisplayCategory = FirstAid
+	}
+
+	item Efavirenz {
+		Type = Normal,
+		Weight = 0.02,
+		DisplayName = Efavirenz,
+		Icon = MedicalCocktail.Efavirenz,
+		Tags = MedicalCocktail.Raw;MedicalCocktail.Alpha,
+		DisplayCategory = FirstAid
+	}
+
+	item Nirmatrelvir {
+		Type = Normal,
+		Weight = 0.02,
+		DisplayName = Nirmatrelvir,
+		Icon = MedicalCocktail.Nirmatrelvir,
+		Tags = MedicalCocktail.Raw;MedicalCocktail.Beta,
+		DisplayCategory = FirstAid
+	}
+
+	item Nitazoxanide {
+		Type = Normal,
+		Weight = 0.02,
+		DisplayName = Nitazoxanide,
+		Icon = MedicalCocktail.Nitazoxanide,
+		Tags = MedicalCocktail.Raw;MedicalCocktail.Beta,
+		DisplayCategory = FirstAid
+	}
+
+	item Relenza {
+		Type = Normal,
+		Weight = 0.02,
+		DisplayName = Relenza,
+		Icon = MedicalCocktail.Relenza,
+		Tags = MedicalCocktail.Raw;MedicalCocktail.Beta,
+		DisplayCategory = FirstAid
+	}
+
+	recipe Prepare Medical Cocktail {
+		Amprenavir,
+		Efavirenz,
+		Nirmatrelvir,
+		Nitazoxanide,
+		Relenza,
+		Water=5,
+
+		Result: Cocktail,
+		Time: 400,
+		Category: Health
+	}
+}
